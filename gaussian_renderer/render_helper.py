@@ -24,7 +24,7 @@ def get_raster_settings(viewpoint_camera, pc : GaussianModel, bg_color : torch.T
         sh_degree=pc.active_sh_degree,
         campos=viewpoint_camera.camera_center,
         prefiltered=False,
-        debug=False
+        debug=False,
     )
     return raster_settings
 

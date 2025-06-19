@@ -72,6 +72,7 @@ if __name__ == "__main__":
         static_phases=static_phases, 
         train_frames=train_eval_split['training_frames'])
     
+
     # Uncomment the following line to use the saved results 
     # static_phase0_obj_path, pred_mask_path = os.path.join(out_dir, "static/ply/static_phase0_obj.ply"), os.path.join(out_dir, "static/obj_masks")
     CONSOLE.log(f"Stage 1.0 Static Training ends. Result Object PLY saved at {static_phase0_obj_path}")  

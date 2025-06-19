@@ -52,7 +52,7 @@ def train_static(dataset, opt, pipe, static_p, exp_name, save_dir, static_phases
     for phase, static_viewpoints in enumerate(viewpoint_dict["static_phases"]):
 
         wandb.init(project=exp_name, name=f"Static Phase-{phase+1} / {len(viewpoint_dict['static_phases'])}", 
-            dir="/scratch_net/biwidl301/daizhang/wandb")
+            dir="/home/yun/wandb/EgoGaussian")
 
         ############################### Training ###############################
         CONSOLE.log(f"\nProcessing Static Phase {phase}: frame {static_viewpoints[0].image_name} - {static_viewpoints[-1].image_name}")
